@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Madhu Sharma</title>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <script src="scripts.js"></script>
+    <nav id="header">
+        <div class="header-tabs">
+            <a href="#">Madhu Sharma</a>
+        </div>
+        <div class="header-tabs">
+            <a href="#about-me">About</a>
+            <a href="#html-element">HTML</a>
+            <a href="#dad-joke">Dad Jokes</a>
+        </div>
+    </nav>    
+    <div id="vanta-canvas">
+        <h1>My name is:</h1>
+        <h3>Madhu Sharma</h3>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+        <script type="text/javascript">
+        VANTA.GLOBE({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xe74c3c,
+            color2: 0xe74c3c,
+            backgroundColor: 0x0
+        })
+        </script>
+    </div>
+    <div id="border"> </div>
+    <div class="section" id="about-me">
+        <div>
+            <h2>About me:</h2>
+            <p>Hello! I'm Madhu, a passionate Computer Science student at Cornell University, specializing in software development.</p>
+            <p>My journey in tech began with a mission to help others, inspired by aiding my immigrant cousins with language barriers through technology. This experience opened my eyes to the transformative power of AI in everyday life. I am dedicated to developing intuitive, impactful software solutions that not only address technical challenges but also enhance the quality of life for people globally. I believe in harnessing the potential of technology to streamline business processes, allowing people to focus more on innovation and strategic goals, and less on technical intricacies.</p>
+        </div>
+        <div id="about-me-picture">
+            <img src="./madhu-sharma.jpg" />
+        </div>
+    </div>
+    <hr />
+    <div class="section" id="html-element">
+        <div>
+            <h2>Interesting HTML Element:</h2>
+            <p>The "&lt;hr&gt;" element is displayed as a horizontal line on the screen.</p>
+            <p>This is used to create a shift in the topic.</p>
+            <p>As we can see on this page, there are neon green horizontal line breaks used to seperate each section.</p>
+        </div>
+    </div>
+    <hr />
+    <div class="section" id="dad-joke">
+        <h2>Generate dad joke:</h2>
+        <button id="dad-joke-button">Click here</button>
+        <p id="dad-joke-text">Click on the button to generate!</p>
+    </div>
+    <hr />
 </body>
 </html>
+
